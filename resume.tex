@@ -20,8 +20,10 @@
 \usepackage{fontawesome5}
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\input{glyphtounicode}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 \usepackage[scale=0.90,lf]{FiraMono}
 
@@ -94,7 +96,7 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Kunal Singhi} \\ \vspace{5pt}
-    \small \textbf{Software Development Student | Aspiring Full Stack Developer} \\ \vspace{2pt}
+    \small \textbf{Software Development Student | Aspiring Full Stack Developer | Trader} \\ \vspace{2pt}
     \small \faPhone* \texttt{+91 9246269410} \hspace{1pt} $|$
     \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto:imsinghi2016@gmail.com}{\texttt{imsinghi2016@gmail.com}} \hspace{1pt} $|$
     \hspace{1pt} \faGlobe \hspace{2pt} \href{https://personal-portfolio-delta-ochre-13.vercel.app/}{\texttt{portfolio.vercel.app}}
